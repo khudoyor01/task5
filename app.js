@@ -3,7 +3,9 @@ alert("Sonni toping o'yiniga xush kelibsiz. Sizda 20 ta imkoniyat bor");
 let array = [];
 array.push(Math.floor(Math.random() * 20));
 alert(array);
-for (let i = 1; i <= 20; i++) {
+
+let i = 1;
+while (i < 20) {
   let numbers = prompt("Sonni toping");
   if (numbers > array) {
     alert(
@@ -16,4 +18,5 @@ for (let i = 1; i <= 20; i++) {
       `${i} - ta urinishda topib bildinggiz. Javob-${array}.  Yozgan soninggiz bilan bir xil`
     );
   }
+  i++;
 }
